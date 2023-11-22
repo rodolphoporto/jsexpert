@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1395110f-5500-4c52-92b6-1501ee30bf58",
+    "name": "Roadster",
+    "releaseYear": 2023
+  },
+  {
+    "id": "d4bbe1e2-b023-47d4-a1dd-15e2a9e49c3a",
+    "name": "Durango",
+    "releaseYear": 2023
+  },
+  {
+    "id": "340bcb7c-34fd-4d85-8ad0-701edcd0ba61",
+    "name": "Expedition",
+    "releaseYear": 2023
+  }
+]
