@@ -14,7 +14,7 @@ import $$repositoryName from '../service/$$repositoryNameDep.js';
 export default class $$componentNameFactory {
     static getInstance() {
         const repository = new $$repositoryName();
-        const service = new $$serviceName(repository);
+        const service = new $$serviceName({ repository });
         return service
     }
 }`
@@ -23,10 +23,10 @@ export function factoryTemplate(componentName, repositoryName, serviceName) {
     const txtFile = template
         .replaceAll(componentNameAnchor, Util.upperCaseFirstLetter(componentName))
 
-        .replaceAll(repositoryNameDepAnchor, Util.lowerCaseFirstLetter(serviceName))
+        .replaceAll(serviceNameDepAnchor, Util.lowerCaseFirstLetter(serviceName))
         .replaceAll(repositoryNameDepAnchor, Util.lowerCaseFirstLetter(repositoryName))
 
-        .replaceAll(repositoryNameAnchor, Util.upperCaseFirstLetter(serviceName))
+        .replaceAll(serviceNameAnchor, Util.upperCaseFirstLetter(serviceName))
         .replaceAll(repositoryNameAnchor, Util.upperCaseFirstLetter(repositoryName))        
 
     return {
