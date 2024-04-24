@@ -1,7 +1,6 @@
 import { Writable, PassThrough } from 'stream'
 
 import axios from 'axios';
-import { write } from 'fs';
 const API_01 = 'http://localhost:3000'
 const API_02 = 'http://localhost:4000'
 
